@@ -1,0 +1,43 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# React / Node
+node_modules/
+frontend/build/
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+/frontend/.env
+
+# IDE and OS files
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Training datasets
+/training/dataset/
+/training/PlantDoc_Kaggle/
+/training/PlantVillage/
+/training/validator_dataset/
+/training/validator_split/
+/training/AugmentedImages/
+
+# Redundant and experimental models
+/training/my_model.keras
+/potatoes.keras
+
+# Temporary files
+*.tmp
+*.bak

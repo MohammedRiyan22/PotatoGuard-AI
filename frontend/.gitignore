@@ -1,0 +1,69 @@
+
+# ==============================
+# Python
+# ==============================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# ==============================
+# Jupyter notebooks
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Node.js / React
+# ==============================
+/node_modules/
+/frontend/node_modules/
+/frontend/build/
+/build/
+/.pnp
+.pnp.js
+
+# ==============================
+# Testing
+# ==============================
+/coverage/
+
+# ==============================
+# Environment variables
+# ==============================
+.env
+.env.*
+!.env.example
+/frontend/.env
+
+# ==============================
+# Logs
+# ==============================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ==============================
+# Operating system
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Training datasets and splits
+# ==============================
+/training/dataset/
+/training/PlantDoc_Kaggle/
+/training/PlantVillage/
+/training/validator_dataset/
+/training/validator_split/
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
