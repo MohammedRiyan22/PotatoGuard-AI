@@ -1,4 +1,4 @@
-﻿# PotatoGuard AI ≡ƒÑö
+# PotatoGuard AI 🥔
 
 **AI-powered potato leaf validation and disease classification**
 
@@ -39,7 +39,7 @@ PotatoGuard AI is a computer-vision application that first checks whether an ima
 
 - **File:** `saved_models/potato_validator.keras`
 - **Classes:** `non_potato`, `potato_leaf`
-- **Input size:** `224 ├ù 224`
+- **Input size:** `224 × 224`
 - **Preprocessing:** `tf.keras.applications.mobilenet_v2.preprocess_input`
 - **Application threshold:** `0.80`
 
@@ -47,7 +47,7 @@ PotatoGuard AI is a computer-vision application that first checks whether an ima
 
 - **File:** `saved_models/my_model_v1.keras`
 - **Classes:** Early Blight, Late Blight, Healthy
-- **Input size:** `256 ├ù 256`
+- **Input size:** `256 × 256`
 - **Preprocessing:** The model includes an internal rescaling layer (`1./255`).
 
 Keep both model files at the paths expected by the backend.
@@ -93,21 +93,21 @@ The layout can vary slightly by local setup. Main project areas include:
 
 ```text
 PotatoGuard-AI/
-Γö£ΓöÇΓöÇ api/
-Γöé   ΓööΓöÇΓöÇ main.py
-Γö£ΓöÇΓöÇ saved_models/
-Γöé   Γö£ΓöÇΓöÇ my_model_v1.keras
-Γöé   ΓööΓöÇΓöÇ potato_validator.keras
-Γö£ΓöÇΓöÇ training/
-Γöé   Γö£ΓöÇΓöÇ dataset/
-Γöé   Γö£ΓöÇΓöÇ validator_dataset/
-Γöé   Γö£ΓöÇΓöÇ validator_split/
-Γöé   Γö£ΓöÇΓöÇ evaluate_disease_model.py
-Γöé   Γö£ΓöÇΓöÇ evaluate_validator.py
-Γöé   ΓööΓöÇΓöÇ check_within_model_duplicates.py
-Γö£ΓöÇΓöÇ frontend/
-Γö£ΓöÇΓöÇ .gitignore
-ΓööΓöÇΓöÇ README.md
+├── api/
+│   └── main.py
+├── saved_models/
+│   ├── my_model_v1.keras
+│   └── potato_validator.keras
+├── training/
+│   ├── dataset/
+│   ├── validator_dataset/
+│   ├── validator_split/
+│   ├── evaluate_disease_model.py
+│   ├── evaluate_validator.py
+│   └── check_within_model_duplicates.py
+├── frontend/
+├── .gitignore
+└── README.md
 ```
 
 Datasets, virtual environments, caches, and temporary files should remain excluded from Git where appropriate. The saved model files are required for inference unless the backend is configured to load them from elsewhere.
